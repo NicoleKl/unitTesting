@@ -10,6 +10,8 @@
 ``` 
 1. To the discretion of the mentor
 2. Coverage >= 80%
+![image](https://user-images.githubusercontent.com/67655488/193730192-50122b3e-df52-47f0-9e18-7fdceece1a35.png)
+
 ``` 
 
 ## Task Description:
