@@ -1,20 +1,9 @@
-# Unit Testing task
-
-## Requirements:
+## Tasks done:
 ``` 
-1. Use ES6
-2. Testing framework: Karma, Jest + Enzyme, Jasmine, Chai + Mocha (one of this)
-``` 
-
-## Assessment Criteria:
-``` 
-1. To the discretion of the mentor
-2. Coverage >= 80%
-![image](https://user-images.githubusercontent.com/67655488/193730192-50122b3e-df52-47f0-9e18-7fdceece1a35.png)
+1. Used ES6
+2. Testing framework: Jest
+2. Test coverage - 100%
 
 ``` 
+<img width="654" alt="Снимок экрана 2022-10-03 в 8 25 14 PM" src="https://user-images.githubusercontent.com/67655488/193730244-787016c3-2b5a-49ba-b5af-0fd6a9c74059.png">
 
-## Task Description:
-``` 
-Under this track it is necessary to reverse engineer the provided lib and write unit tests.
-``` 
