@@ -14,38 +14,38 @@ afterAll(() => {
   testFunction.lang('en');
 });
 
-describe('tatar language', () => {
-    test('tatar months in nominative', () => {
-        'гыйнвар_февраль_март_апрель_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь'
-        .split('_')
-        .forEach((month, index) => {
-            testDate.setMonth(index);
-            expect(testFunction('MMMM', testDate)).toEqual(month);
-        });
-    });
+describe('should use tatar language', () => {
+  test('should return tatar months in nominative', () => {
+    'гыйнвар_февраль_март_апрель_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь'
+      .split('_')
+      .forEach((month, index) => {
+        testDate.setMonth(index);
+        expect(testFunction('MMMM', testDate)).toEqual(month);
+      });
+  });
 
-    test('tatar months shortly', () => {
-        'гыйнв_фев_мар_апр_май_июнь_июль_авг_сен_окт_ноя_дек'
-        .split('_')
-        .forEach((month, index) => {
-            testDate.setMonth(index);
-            expect(testFunction('MMM', testDate)).toEqual(month);
-        });
-    });
+  test('should return tatar months shortly', () => {
+    'гыйнв_фев_мар_апр_май_июнь_июль_авг_сен_окт_ноя_дек'
+      .split('_')
+      .forEach((month, index) => {
+        testDate.setMonth(index);
+        expect(testFunction('MMM', testDate)).toEqual(month);
+      });
+  });
 
-    test('tatar days fully', () => {
-        'якшәмбе_дүшәмбе_сишәмбе_чәршәмбе_пәнҗешәмбе_җомга_шимбә'
-        .split('_')
-        .forEach((day, index) => {
-            testDate.setDate(18 + index);
-            expect(testFunction('DDD', testDate)).toEqual(day);
-        });
-    });
-
-    test('tatar days shortly', () => {
-        'як_дш_сш_чш_пш_җм_шм'.split('_').forEach(function (day, index) {
+  test('should return tatar days fully', () => {
+    'якшәмбе_дүшәмбе_сишәмбе_чәршәмбе_пәнҗешәмбе_җомга_шимбә'
+      .split('_')
+      .forEach((day, index) => {
         testDate.setDate(18 + index);
-        expect(testFunction('DD', testDate)).toEqual(day);
-        });
+        expect(testFunction('DDD', testDate)).toEqual(day);
+      });
+  });
+
+  test('should return tatar days shortly', () => {
+    'як_дш_сш_чш_пш_җм_шм'.split('_').forEach(function (day, index) {
+      testDate.setDate(18 + index);
+      expect(testFunction('DD', testDate)).toEqual(day);
     });
+  });
 });
